@@ -1,0 +1,167 @@
+body{
+    position:absolute;
+    height: 2300px;
+    margin:0 ;
+    padding:0 ;
+    left: 0;
+    right: 0;
+    font-family: Roboto;
+}
+a{text-decoration: none;
+}
+.all{
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.hero{
+    width: 100px;
+    bottom: 1000px;
+    height: 70px;
+    background: #fcd139;
+}
+.navbar{
+    position: absolute;
+    width: 100px;
+    top:20px ;
+}
+.navbar img{
+    cursor: pointer;
+}
+.pages { 
+float: right;
+position: relative;
+bottom: 20px;
+left: 900px;
+}
+.pages a{
+    margin-left: 50px;
+    font-family:roboto ;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #d10c6f;
+}
+.register{
+    position: absolute;
+    left: 1100px;
+    bottom: 15px;
+    height:35px;
+    background: #ffc700;
+    border: 1px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+}
+.register{
+    color: #ffffff;
+    padding: 10px 10px;
+}
+.header{
+    position: absolute;
+    top: 174px;
+    width: 100%;
+    margin-left: 4%;
+}
+.header h1{
+width: 100%;
+left: 0px;
+font-style: normal;
+font-weight: bold;
+font-size: 44px;
+line-height: 44px;
+color: #ffffff;
+margin-top:150px ;
+}
+.header p{
+margin-left: 5px;
+width: 100%;
+font-family: sans-serif;
+font-weight: bold;
+font-size: 20px;
+line-height: 26px;
+color: #d10c6f;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    height: 690px;
+    left: 5%;
+    right: 5%;
+    top: 820px;
+    width: 500px;
+}
+.img1, .img2, .img3{
+    margin: 50px;
+    background-color: #ffc700;
+}
+.buy{
+    position: absolute;
+    width: 100%;
+    top: 1000px;
+}
+.buy h1{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: indigo;
+}
+.icons{
+
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+    width: 300px;
+    height: 150px;
+    bottom: -500px;
+    float: left;
+    left: calc(50%);
+}
+.cart{
+    position: absolute;
+    top: 1400px;
+    text-align: right;
+    width: 100px;
+}
+.cart h1{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: right;
+    color: #000000;
+}
+.cart p{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    font-family: sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: right;
+    color: #6a6a6a;
+}
+.icons{
+    max-width: 500px;
+    max-height: 100px;
+    float: left;
+    object-position: 100%
+}
+.buttom img{
+    width: 53px;
+    height: 53px;
+    margin: 5px;
+}
+.buttom p{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    color: aqua;
+}
