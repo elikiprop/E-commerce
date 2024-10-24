@@ -6,42 +6,115 @@
   </head>
   <style>
     img {
-      max-width: 5000px;
-      max-height: 100px;
-      float: 100px left;
+      max-width: 500px;
+      height: auto;
+      float: left;
       align-items: center;
-      object-position: 100%;
+      object-position: center;
     }
-    icon {
-      max-width: 5000px;
-      max-height: 100px;
-      float: 100px left;
+
+    .icons img {
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
       align-items: center;
-      object-position: 100%;
+      background-color: #f8f9fa;
+      padding: 10px;
+    }
+
+    .navbar .pages a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .register {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .header {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .products {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+
+    .products img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .buy, .cart {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      margin: 20px auto;
+    }
+
+    .form input {
+      margin: 10px 0;
+      padding: 10px;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .button p {
+      margin-left: 10px;
     }
   </style>
   <body>
-    <img src="my image.jpg" />
+    <img src="my image.jpg" alt="Main Image" />
     <span class="hero"></span>
+
     <div class="all">
       <nav class="navbar">
         <div class="pages">
-          <a href="#">Home</a><a href="#">Shop</a><a href="#">Contact</a
-          ><a href="#">About</a>
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
         </div>
-        <button class="register"><a href="#"></a>REGISTER</button>
+        <button class="register">
+          <a href="register.html" style="color: white;">REGISTER</a>
+        </button>
       </nav>
+
       <div class="header">
         <h1>SHOP YOUR SMART ITEMS</h1>
         <p>
-          You can buy the best smart items in the world fo your life from us
+          You can buy the best smart items in the world for your life from us.
         </p>
       </div>
+
       <div class="products">
-        <img class="img1" src="phone.jpg" />
-        <img class="img2" src="tablet.jpg" />
-        <img class="img3" src="headphone.jpg" />
+        <img class="img1" src="phone.jpg" alt="Phone" />
+        <img class="img2" src="tablet.jpg" alt="Tablet" />
+        <img class="img3" src="headphone.jpg" alt="Headphone" />
       </div>
+
       <div class="buy">
         <h1>Buy it now</h1>
         <p>
@@ -51,6 +124,7 @@
           accusantium! Laborum sit officia voluptatum consequuntur.
         </p>
       </div>
+
       <div class="cart">
         <h1>Add to cart</h1>
         <p>
@@ -60,9 +134,10 @@
           perspiciatis nesciunt maxime!
         </p>
       </div>
+
       <form class="form">
         <input
-          class="firtsname"
+          class="firstname"
           autocomplete="off"
           placeholder="First Name"
           type="text"
@@ -79,14 +154,15 @@
           placeholder="Email"
           type="text"
         />
-        <button class="submit" type="SUBMIT">SUBMIT</button>
+        <button class="submit" type="submit">SUBMIT</button>
       </form>
     </div>
+
     <div class="icons">
       <div class="button">
-        <img src="facebook.png" /><img src="linkedin.png" /><img
-          src="whatsapp.png"
-        />
+        <img src="facebook.png" alt="Facebook" />
+        <img src="linkedin.png" alt="LinkedIn" />
+        <img src="whatsapp.png" alt="WhatsApp" />
         <p>elikiprop42@gmail.com</p>
       </div>
     </div>
