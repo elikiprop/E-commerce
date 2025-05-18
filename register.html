@@ -1,40 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Register</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="pages">
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-      </div>
-    </nav>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyStore - Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">MyStore</h1>
+            <nav class="pages">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
 
-    <h1>Register Here</h1>
-    <form class="form" action="submit.html" method="POST">
-      <input
-        class="firstname"
-        autocomplete="off"
-        placeholder="First Name"
-        type="text"
-      />
-      <input
-        class="lastname"
-        autocomplete="off"
-        placeholder="Last Name"
-        type="text"
-      />
-      <input
-        class="email"
-        autocomplete="off"
-        placeholder="Email"
-        type="text"
-      />
-      <button class="submit" type="submit">SUBMIT</button>
-    </form>
-  </body>
+    <section class="register">
+        <div class="container">
+            <h2>Register</h2>
+            <form class="form" id="register-form">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <div id="form-message" style="display: none; margin-top: 20px; color: green;"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MyStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

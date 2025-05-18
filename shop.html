@@ -1,20 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Shop</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="pages">
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-      </div>
-    </nav>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyStore - Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">MyStore</h1>
+            <nav class="pages">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
 
-    <h1>Welcome to the Shop</h1>
-    <p>Here, you can explore and buy our best smart items.</p>
-  </body>
+    <section class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="static/images/tablet.jpg" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>$799</p>
+                    <button class="btn add-to-cart" data-product="Laptop" data-price="799">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="static/images/headphone.jpg" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <p>$149</p>
+                    <button class="btn add-to-cart" data-product="Smartwatch" data-price="149">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="static/images/phone.jpg" alt="Camera">
+                    <h3>Camera</h3>
+                    <p>$499</p>
+                    <button class="btn add-to-cart" data-product="Camera" data-price="499">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MyStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

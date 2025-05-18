@@ -1,170 +1,138 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Home</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Buy the best smart items for your life, including phones, tablets, and headphones." />
+    <title>Shop Smart Items</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <style>
-    img {
-      max-width: 500px;
-      height: auto;
-      float: left;
-      align-items: center;
-      object-position: center;
-    }
-
-    .icons img {
-      width: 40px;
-      height: 40px;
-      margin: 10px;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #f8f9fa;
-      padding: 10px;
-    }
-
-    .navbar .pages a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #000;
-    }
-
-    .register {
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
-
-    .header {
-      text-align: center;
-      margin: 50px 0;
-    }
-
-    .products {
-      display: flex;
-      justify-content: space-around;
-      margin: 20px 0;
-    }
-
-    .products img {
-      width: 150px;
-      height: 150px;
-    }
-
-    .buy, .cart {
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    .form {
-      display: flex;
-      flex-direction: column;
-      width: 300px;
-      margin: 20px auto;
-    }
-
-    .form input {
-      margin: 10px 0;
-      padding: 10px;
-    }
-
-    .icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 20px 0;
-    }
-
-    .button p {
-      margin-left: 10px;
-    }
-  </style>
-  <body>
-    <img src="my image.jpg" alt="Main Image" />
-    <span class="hero"></span>
-
-    <div class="all">
-      <nav class="navbar">
-        <div class="pages">
-          <a href="index.html">Home</a>
-          <a href="shop.html">Shop</a>
-          <a href="contact.html">Contact</a>
-          <a href="about.html">About</a>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">MyStore</h1>
+            <nav class="pages">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+                <a href="register.html" class="register">Register</a>
+            </nav>
         </div>
-        <button class="register">
-          <a href="register.html" style="color: white;">REGISTER</a>
-        </button>
-      </nav>
+    </header>
 
-      <div class="header">
-        <h1>SHOP YOUR SMART ITEMS</h1>
-        <p>
-          You can buy the best smart items in the world for your life from us.
-        </p>
-      </div>
+    <main>
+        <section class="hero">
+            <img src="static/images/my image.jpg" alt="Hero Image" loading="lazy" class="hero-image" />
+            <div class="hero-content">
+                <h1>Shop Your Smart Items</h1>
+                <p>You can buy the best smart items in the world for your life from us.</p>
+                <a href="shop.html" class="btn">Shop Now</a>
+            </div>
+        </section>
 
-      <div class="products">
-        <img class="img1" src="phone.jpg" alt="Phone" />
-        <img class="img2" src="tablet.jpg" alt="Tablet" />
-        <img class="img3" src="headphone.jpg" alt="Headphone" />
-      </div>
+        <section class="products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="static/images/phone.jpg" alt="Smartphone" loading="lazy" />
+                        <h3>Smartphone</h3>
+                        <p>$299</p>
+                        <button class="btn add-to-cart" data-product="Smartphone" data-price="299">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="static/images/tablet.jpg" alt="Tablet" loading="lazy" />
+                        <h3>Tablet</h3>
+                        <p>$499</p>
+                        <button class="btn add-to-cart" data-product="Tablet" data-price="499">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="static/images/headphone.jpg" alt="Headphones" loading="lazy" />
+                        <h3>Headphones</h3>
+                        <p>$99</p>
+                        <button class="btn add-to-cart" data-product="Headphones" data-price="99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="buy">
-        <h1>Buy it now</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, ab
-          possimus aliquam, voluptatem asperiores necessitatibus recusandae
-          laborum cupiditate, vel ratione porro fugiat similique nobis
-          accusantium! Laborum sit officia voluptatum consequuntur.
-        </p>
-      </div>
+        <section class="buy">
+            <div class="container">
+                <h2>Buy It Now</h2>
+                <p>
+                    Get your favorite smart devices instantly with our fast and secure checkout process.
+                    Enjoy top-quality smartphones, tablets, and headphones designed to enhance your lifestyle.
+                </p>
+            </div>
+        </section>
 
-      <div class="cart">
-        <h1>Add to cart</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          odit eveniet magnam odio porro eos sunt eius, quisquam ea amet
-          dignissimos! Corrupti porro iste quam, asperiores explicabo
-          perspiciatis nesciunt maxime!
-        </p>
-      </div>
+        <section class="cart">
+            <div class="container">
+                <h2>Add to Cart</h2>
+                <p>
+                    Easily add your desired smart items to your cart and proceed to a seamless checkout experience.
+                    Shop with confidence knowing your purchase is safe and reliable.
+                </p>
+            </div>
+        </section>
 
-      <form class="form">
-        <input
-          class="firstname"
-          autocomplete="off"
-          placeholder="First Name"
-          type="text"
-        />
-        <input
-          class="lastname"
-          autocomplete="off"
-          placeholder="Last Name"
-          type="text"
-        />
-        <input
-          class="email"
-          autocomplete="off"
-          placeholder="Email"
-          type="text"
-        />
-        <button class="submit" type="submit">SUBMIT</button>
-      </form>
-    </div>
+        <section class="contact-form">
+            <div class="container">
+                <form class="form" id="contact-form">
+                    <label for="firstname">First Name</label>
+                    <input
+                        id="firstname"
+                        class="firstname"
+                        autocomplete="given-name"
+                        placeholder="First Name"
+                        type="text"
+                        required
+                    />
+                    <label for="lastname">Last Name</label>
+                    <input
+                        id="lastname"
+                        class="lastname"
+                        autocomplete="family-name"
+                        placeholder="Last Name"
+                        type="text"
+                        required
+                    />
+                    <label for="email">Email</label>
+                    <input
+                        id="email"
+                        class="email"
+                        autocomplete="email"
+                        placeholder="Email"
+                        type="email"
+                        required
+                    />
+                    <button class="btn submit" type="submit">SUBMIT</button>
+                </form>
+                <div id="form-message" style="display: none; margin-top: 20px; color: green;"></div>
+            </div>
+        </section>
+    </main>
 
-    <div class="icons">
-      <div class="button">
-        <img src="facebook.png" alt="Facebook" />
-        <img src="linkedin.png" alt="LinkedIn" />
-        <img src="whatsapp.png" alt="WhatsApp" />
-        <p>elikiprop42@gmail.com</p>
-      </div>
-    </div>
-  </body>
+    <footer class="icons">
+        <div class="container">
+            <div class="button">
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page">
+                    <img src="static/images/facebook.png" alt="Facebook Icon" loading="lazy" />
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="Visit our LinkedIn page">
+                    <img src="static/images/linkedin.png" alt="LinkedIn Icon" loading="lazy" />
+                </a>
+                <a href="https://whatsapp.com" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+                    <img src="static/images/whatsapp.png" alt="WhatsApp Icon" loading="lazy" />
+                </a>
+                <p>elikiprop42@gmail.com</p>
+            </div>
+            <p>© 2025 MyStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
