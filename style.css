@@ -1011,6 +1011,109 @@ body {
     animation: fadeInUp 1s ease 0.2s backwards;
 }
 
+/* Thank You Page */
+.thank-you-section {
+    padding: 100px 0;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+}
+
+.thank-you-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    animation: fadeInUp 0.8s ease;
+}
+
+.success-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 32px;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #10b981;
+    animation: scaleIn 0.5s ease 0.3s backwards;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.thank-you-content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--dark);
+}
+
+.success-message {
+    font-size: 20px;
+    color: var(--gray);
+    margin-bottom: 12px;
+}
+
+.sub-message {
+    font-size: 16px;
+    color: var(--gray);
+    margin-bottom: 40px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 60px;
+}
+
+.info-card {
+    background: var(--white);
+    padding: 32px 24px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: var(--transition);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.info-card svg {
+    color: var(--primary);
+    margin-bottom: 16px;
+}
+
+.info-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.info-card p {
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
 /* Responsive Design */
 @media (max-width: 968px) {
     .contact-wrapper {
@@ -1096,5 +1199,22 @@ body {
 
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .thank-you-content h1 {
+        font-size: 36px;
+    }
+
+    .success-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
     }
 }
