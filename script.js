@@ -167,22 +167,18 @@ function handleLoginSubmit(e) {
 // Handle register form submission
 function handleRegisterSubmit(e) {
     e.preventDefault();
-    
-    const firstname = document.getElementById('register-firstname').value;
-    const lastname = document.getElementById('register-lastname').value;
+
+    const fullName = document.getElementById('register-name').value;
     const email = document.getElementById('register-email').value;
     const password = document.getElementById('register-password').value;
-    
-    // Simulate registration
+
     setTimeout(() => {
-        showNotification(`Welcome, ${firstname}! Your account has been created.`, 'success');
-        
-        // Save registration data
+        showNotification(`Welcome, ${fullName}! Your account has been created.`, 'success');
+
         localStorage.setItem('isLoggedIn', 'true');
         localStorage.setItem('userEmail', email);
-        localStorage.setItem('userName', `${firstname} ${lastname}`);
-        
-        // Redirect to home page
+        localStorage.setItem('userName', fullName);
+
         setTimeout(() => {
             window.location.href = 'index.html';
         }, 1500);
@@ -193,8 +189,9 @@ function handleRegisterSubmit(e) {
 function initializeAuth() {
     const signUpButton = document.getElementById('signUp');
     const signInButton = document.getElementById('signIn');
-    const signUpLink = document.getElementById('sign-up-link');
-    const signInLink = document.getElementById('sign-in-link');
+    const signUpLink = document.getElementById('show-register');
+    const signInLink = document.getElementById('show-login');
+
     const container = document.getElementById('auth-container');
     
     if (signUpButton && signInButton && container) {
