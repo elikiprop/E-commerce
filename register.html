@@ -151,44 +151,6 @@
             </div>
         </div>
     </footer>
-
     <script src="script.js"></script>
-    <script>
-        // Toggle between login and register
-        const signUpButton = document.getElementById('signUp');
-        const signInButton = document.getElementById('signIn');
-        const showRegisterLink = document.getElementById('show-register');
-        const showLoginLink = document.getElementById('show-login');
-        const container = document.getElementById('auth-container');
-
-        signUpButton.addEventListener('click', () => {
-            container.classList.add('right-panel-active');
-        });
-
-        signInButton.addEventListener('click', () => {
-            container.classList.remove('right-panel-active');
-        });
-
-        showRegisterLink.addEventListener('click', (e) => {
-            e.preventDefault();
-            container.classList.add('right-panel-active');
-        });
-
-        showLoginLink.addEventListener('click', (e) => {
-            e.preventDefault();
-            container.classList.remove('right-panel-active');
-        });
-
-        // Handle form submissions
-        document.getElementById('login-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Login functionality would go here!');
-        });
-
-        document.getElementById('register-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Registration functionality would go here!');
-        });
-    </script>
 </body>
 </html>
